@@ -14,7 +14,7 @@ public class DateUtils {
 
     private static final DateTimeFormatter ISO = DateTimeFormatter.ISO_LOCAL_DATE;
 
-    private static LocalDate parseLocalDateOrThrow(String value, String fieldName) {
+    public static LocalDate parseLocalDateOrThrow(String value, String fieldName) {
         if (value == null || value.isBlank()) {
             return null;
         } try {
