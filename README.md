@@ -48,8 +48,8 @@ Para ejecturar el programa, confirma que los siguientes puntos estan correctos.
 1. **Dependencias y plugins correctos**
 
    * Compruebalos en `pom.xml`.
-  
-3. **Arrancar APP**
+
+2. **Arrancar APP**
 
    * Ejecuta `VuelosApplication.java` en el proyecto de IntelliJ
    * O desde la terminal (raíz del proyecto)
@@ -58,6 +58,22 @@ mvn spring-boot:run
 ```
 ### La API queda disponible en:
 - `http://localhost:8080`
+---
+
+## 🚀 Probar con Postman
+### Importar la colección incluida en el repo
+> La colección exportada se encuentra en `postman/` (archivo `.json`).
+
+1. **Abrir Postman.**
+
+2. **Click en Import (arriba a la izquierda).**
+ 
+3. **Seleccionar File y elegir el archivo de la carpeta `postman/` del proyecto.**
+
+   (`postman/vuelosCRUD.postman_collection.json`).
+   
+5. **Confirmar importación. La colección aparecerá en Collections.**
+
 ---
 
 ## 🦜 Persistencia en memoria
