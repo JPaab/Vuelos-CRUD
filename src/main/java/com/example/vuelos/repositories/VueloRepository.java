@@ -41,7 +41,7 @@ public class VueloRepository {
         return v;
     }
 
-    public Vuelo save (Vuelo vuelo) {
+    public Vuelo save(Vuelo vuelo) {
         vuelo.setId(idVuelo++);
         vuelos.put(vuelo.getId(), vuelo);
         return vuelo;
@@ -61,7 +61,7 @@ public class VueloRepository {
         }
         return vuelos.values().stream().anyMatch(v ->
                 v.getNombreVuelo() != null && v.getNombreVuelo().equalsIgnoreCase(nombreVuelo)
-                && (!Integer.valueOf(v.getId()).equals(id)));
+                        && (!Integer.valueOf(v.getId()).equals(id)));
 
     }
 
