@@ -167,7 +167,7 @@ Al listar los vuelos o buscar por ID, cada vuelo incluye el campo extra:
 ## 🦺 Casos de prueba sugeridos
 
 ### Listado y filtros
-- `GET /vuelos` → 200 OK y vuelos listados ordenados por `fechaSalida` ASC.
+- `GET /vuelos` → 200 OK y vuelos listados ordenados por `fechaSalida`.
 - `GET /vuelos?empresa=Air Europa` → 200 OK y todos los vuelos con empresa Air Europa.
 - `GET /vuelos?lugarLlegada=New York&fechaSalida=2025-03-10` → 200 OK (Usando varios filtros en un mismo GET).
 
@@ -177,7 +177,7 @@ Al listar los vuelos o buscar por ID, cada vuelo incluye el campo extra:
 
 ### Validaciones
 - `POST /vuelos` con campo faltante → 400 Bad Request.
-- `POST /vuelos` con `fechaSalida > fechaLlegada` → 400 Bad Request.
+- `POST /vuelos` con `fechaSalida posterior a fechaLlegada` → 400 Bad Request.
 - `POST /vuelos` duplicando `nombreVuelo` → 409 Conflict.
 
 ### CRUD completo
