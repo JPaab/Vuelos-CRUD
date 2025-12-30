@@ -96,14 +96,13 @@ mvn spring-boot:run
 | `lugarLlegada` | String | `New York`   | Filtra por lugar de llegada (case-insensitive). |
 | `fechaSalida`  | String | `2025-03-10` | Filtra por fecha de salida (formato `yyyy-MM-dd`). |
 | `ordenarPor`   | String | `empresa`    | `fechaSalida` (default), `empresa`, `lugarLlegada`. |
-| `ordenar`      | String | `DESC`       | `ASC` (default) o `DESC`. |
 
 **Ejemplos:**
 ```text
 /vuelos
 /vuelos?empresa=Air Europa
 /vuelos?lugarLlegada=New%20York&fechaSalida=2025-03-10
-/vuelos?ordenarPor=empresa&ordenar=DESC
+/vuelos?ordenarPor=empresa
 ```
 
 ---
@@ -173,7 +172,7 @@ Al listar los vuelos o buscar por ID, cada vuelo incluye el campo extra:
 - `GET /vuelos?lugarLlegada=New York&fechaSalida=2025-03-10` → 200 OK (Usando varios filtros en un mismo GET).
 
 ### Ordenamiento
-- `GET /vuelos?ordenarPor=empresa&ordenar=DESC` → 200 OK.
+- `GET /vuelos?ordenarPor=empresa` → 200 OK.
 - `GET /vuelos?ordenarPor=stefano` → 400.
 
 ### Validaciones
