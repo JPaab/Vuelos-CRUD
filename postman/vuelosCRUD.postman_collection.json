@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "0ede4183-9562-4836-8899-7467d5e19ba1",
+		"_postman_id": "9d0cfbf1-7713-49ad-b266-93ef9e3b492c",
 		"name": "vuelosCRUD",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "50756015",
-		"_collection_link": "https://interstellar-desert-568801.postman.co/workspace/Pablo's-Workspace~66f412e5-fddf-47af-8f3a-2231d5604d7d/collection/50756015-0ede4183-9562-4836-8899-7467d5e19ba1?action=share&source=collection_link&creator=50756015"
+		"_collection_link": "https://interstellar-desert-568801.postman.co/workspace/Pablo's-Workspace~66f412e5-fddf-47af-8f3a-2231d5604d7d/collection/50756015-9d0cfbf1-7713-49ad-b266-93ef9e3b492c?action=share&source=collection_link&creator=50756015"
 	},
 	"item": [
 		{
@@ -52,7 +52,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/vuelos?empresa=Air Europa",
+					"raw": "http://localhost:8080/vuelos?empresa=Iberia",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -64,86 +64,12 @@
 					"query": [
 						{
 							"key": "empresa",
-							"value": "Air Europa"
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "listarFiltroLugarLlegada",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8080/vuelos?lugarLlegada=Buenos Aires",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"vuelos"
-					],
-					"query": [
-						{
-							"key": "lugarLlegada",
-							"value": "Buenos Aires"
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "listarFiltroFechaSalida",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8080/vuelos?fechaSalida=2025-03-10",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"vuelos"
-					],
-					"query": [
-						{
-							"key": "fechaSalida",
-							"value": "2025-03-10"
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "filtroBonusOrdenado",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8080/vuelos?ordenarPor=lugarLlegada&ordenar=DESC",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"vuelos"
-					],
-					"query": [
-						{
-							"key": "ordenarPor",
-							"value": "lugarLlegada"
+							"value": "Iberia"
 						},
 						{
-							"key": "ordenar",
-							"value": "DESC"
+							"key": "empresa",
+							"value": "Air Europa",
+							"disabled": true
 						}
 					]
 				}
@@ -157,7 +83,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"nombreVuelo\": \"Q492X\",\r\n  \"empresa\": \"Air Europa\",\r\n  \"lugarSalida\": \"Madrid\",\r\n  \"lugarLlegada\": \"Coruña\",\r\n  \"fechaSalida\": \"2025-03-15\",\r\n  \"fechaLlegada\": \"2025-03-16\"\r\n}",
+					"raw": "{\r\n  \"nombreVuelo\": \"AEFX541\",\r\n  \"empresa\": \"Air Europa\",\r\n  \"lugarSalida\": \"Madrid\",\r\n  \"lugarLlegada\": \"Colombia\",\r\n  \"fechaSalida\": \"2025-03-10\",\r\n  \"fechaLlegada\": \"2025-03-12\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -185,7 +111,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"nombreVuelo\": \"XA123\",\r\n  \"empresa\": \"Air Europa\",\r\n  \"lugarSalida\": \"Madrid\",\r\n  \"lugarLlegada\": \"Lisboa\",\r\n  \"fechaSalida\": \"2025-03-01\",\r\n  \"fechaLlegada\": \"2025-03-01\"\r\n}",
+					"raw": "{\r\n  \"nombreVuelo\": \"AEC541\",\r\n  \"empresa\": \"Air Europa\",\r\n  \"lugarSalida\": \"Madrid\",\r\n  \"lugarLlegada\": \"Colombia\",\r\n  \"fechaSalida\": \"2025-03-10\",\r\n  \"fechaLlegada\": \"2025-03-12\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -193,7 +119,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/vuelos/12",
+					"raw": "http://localhost:8080/vuelos/11",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -201,7 +127,7 @@
 					"port": "8080",
 					"path": [
 						"vuelos",
-						"12"
+						"11"
 					]
 				}
 			},
@@ -222,7 +148,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/vuelos/4",
+					"raw": "http://localhost:8080/vuelos/5",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -230,7 +156,102 @@
 					"port": "8080",
 					"path": [
 						"vuelos",
-						"4"
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listarFiltroLugarLlegada",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/vuelos?lugarLlegada=Buenos Aires",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"vuelos"
+					],
+					"query": [
+						{
+							"key": "lugarLlegada",
+							"value": "Buenos Aires"
+						},
+						{
+							"key": "lugarLlegada",
+							"value": "Madrid",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listarFiltroFechaSalida",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/vuelos?fechaSalida=2025-03-10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"vuelos"
+					],
+					"query": [
+						{
+							"key": "fechaSalida",
+							"value": "2025-03-10"
+						},
+						{
+							"key": "fechaSalida",
+							"value": "2025-03-11",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "filtroBonusOrdenado",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/vuelos?ordenarPor=empresa",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"vuelos"
+					],
+					"query": [
+						{
+							"key": "ordenarPor",
+							"value": "empresa"
+						},
+						{
+							"key": "ordenarPor",
+							"value": "lugarLlegada",
+							"disabled": true
+						},
+						{
+							"key": "ordenarPor",
+							"value": "fechaSalida",
+							"disabled": true
+						}
 					]
 				}
 			},
