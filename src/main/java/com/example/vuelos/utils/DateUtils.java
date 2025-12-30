@@ -29,16 +29,4 @@ public class DateUtils {
             throw new BadRequestException("fechaSalida no puede ser posterior a fechaLlegada");
         }
     }
-
-    public static String normalizeOrden(String ordenar) {
-        if (ordenar == null) {
-            return null;
-        }
-
-        String o = ordenar.trim();
-        if (o.startsWith("\"") && o.endsWith("\"") && o.length() >= 2) {
-            o = o.substring(1, o.length() - 1);
-        }
-        return o.trim();
-    }
 }
